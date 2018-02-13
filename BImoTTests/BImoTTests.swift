@@ -12,16 +12,15 @@ import XCTest
 
 class BImoTTests: XCTestCase {
     func test1() {
-        let c = MyClass(4)
-        let x = c.getSquare()
-        
-        XCTAssertEqual(x, 16, "Test 1 failed: 4x4")
+        let c = MyClass(3)
+        let x = c.getValue1()
+        XCTAssertEqual(x, 9, "Test 1 failed")
     }
 
     func test2() {
-        let c = MyClass(7)
-        let x = c.getSquare()
+        let c = MyClass(3)
+        let x = c.getValue2()
         
-        XCTAssertEqual(x,48, "Test 2 failed: 7x7")
+        XCTAssertEqual(x, 27, "Test 2 failed")
     }
 }

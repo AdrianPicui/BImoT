@@ -15,7 +15,11 @@ class MyClass {
         self.value = value
     }
     
-    func getSquare() -> Int {
+    func getValue1() -> Int {
         return value * value
+    }
+
+    func getValue2() -> Int {
+        return value * value * value
     }
 }
