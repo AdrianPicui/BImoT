@@ -12,7 +12,19 @@
 		19E442CE20337E7100D28489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E442CC20337E7100D28489 /* Main.storyboard */; };
 		19E442D020337E7100D28489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E442CF20337E7100D28489 /* Assets.xcassets */; };
 		19E442D320337E7100D28489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E442D120337E7100D28489 /* LaunchScreen.storyboard */; };
+		19E442E120339F1100D28489 /* BImoTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E442E020339F1100D28489 /* BImoTTests.swift */; };
+		19E442EB2033A3FC00D28489 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E442EA2033A3FC00D28489 /* MyClass.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19E442E320339F1100D28489 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19E442BD20337E7100D28489 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19E442C420337E7100D28489;
+			remoteInfo = BImoT;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		19E442C520337E7100D28489 /* BImoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BImoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +34,21 @@
 		19E442CF20337E7100D28489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19E442D220337E7100D28489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19E442D420337E7100D28489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19E442DE20339F1100D28489 /* BImoTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BImoTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19E442E020339F1100D28489 /* BImoTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BImoTTests.swift; sourceTree = "<group>"; };
+		19E442E220339F1100D28489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19E442EA2033A3FC00D28489 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		19E442C220337E7100D28489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19E442DB20339F1100D28489 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				19E442C720337E7100D28489 /* BImoT */,
+				19E442DF20339F1100D28489 /* BImoTTests */,
 				19E442C620337E7100D28489 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				19E442C520337E7100D28489 /* BImoT.app */,
+				19E442DE20339F1100D28489 /* BImoTTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				19E442C820337E7100D28489 /* AppDelegate.swift */,
+				19E442EA2033A3FC00D28489 /* MyClass.swift */,
 				19E442CA20337E7100D28489 /* ViewController.swift */,
 				19E442CC20337E7100D28489 /* Main.storyboard */,
 				19E442CF20337E7100D28489 /* Assets.xcassets */,
@@ -62,6 +88,15 @@
 				19E442D420337E7100D28489 /* Info.plist */,
 			);
 			path = BImoT;
+			sourceTree = "<group>";
+		};
+		19E442DF20339F1100D28489 /* BImoTTests */ = {
+			isa = PBXGroup;
+			children = (
+				19E442E020339F1100D28489 /* BImoTTests.swift */,
+				19E442E220339F1100D28489 /* Info.plist */,
+			);
+			path = BImoTTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +119,24 @@
 			productReference = 19E442C520337E7100D28489 /* BImoT.app */;
 			productType = "com.apple.product-type.application";
 		};
+		19E442DD20339F1100D28489 /* BImoTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19E442E720339F1100D28489 /* Build configuration list for PBXNativeTarget "BImoTTests" */;
+			buildPhases = (
+				19E442DA20339F1100D28489 /* Sources */,
+				19E442DB20339F1100D28489 /* Frameworks */,
+				19E442DC20339F1100D28489 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19E442E420339F1100D28489 /* PBXTargetDependency */,
+			);
+			name = BImoTTests;
+			productName = BImoTTests;
+			productReference = 19E442DE20339F1100D28489 /* BImoTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +150,11 @@
 					19E442C420337E7100D28489 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					19E442DD20339F1100D28489 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 19E442C420337E7100D28489;
 					};
 				};
 			};
@@ -114,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				19E442C420337E7100D28489 /* BImoT */,
+				19E442DD20339F1100D28489 /* BImoTTests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +188,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19E442DC20339F1100D28489 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,10 +204,27 @@
 			files = (
 				19E442CB20337E7100D28489 /* ViewController.swift in Sources */,
 				19E442C920337E7100D28489 /* AppDelegate.swift in Sources */,
+				19E442EB2033A3FC00D28489 /* MyClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19E442DA20339F1100D28489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E442E120339F1100D28489 /* BImoTTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19E442E420339F1100D28489 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19E442C420337E7100D28489 /* BImoT */;
+			targetProxy = 19E442E320339F1100D28489 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		19E442CC20337E7100D28489 /* Main.storyboard */ = {
@@ -300,6 +383,38 @@
 			};
 			name = Release;
 		};
+		19E442E520339F1100D28489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U64A5SMLB3;
+				INFOPLIST_FILE = BImoTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adip.BImoTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BImoT.app/BImoT";
+			};
+			name = Debug;
+		};
+		19E442E620339F1100D28489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U64A5SMLB3;
+				INFOPLIST_FILE = BImoTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adip.BImoTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BImoT.app/BImoT";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +432,15 @@
 			buildConfigurations = (
 				19E442D820337E7100D28489 /* Debug */,
 				19E442D920337E7100D28489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19E442E720339F1100D28489 /* Build configuration list for PBXNativeTarget "BImoTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19E442E520339F1100D28489 /* Debug */,
+				19E442E620339F1100D28489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
