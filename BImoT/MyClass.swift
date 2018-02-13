@@ -20,6 +20,6 @@ class MyClass {
     }
 
     func getValue2() -> Int {
-        return value * value + value + 1
+        return value * value + value + 2
     }
 }
